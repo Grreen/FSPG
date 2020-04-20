@@ -25,7 +25,7 @@ static class  Algorithms
 /// </summary>
 	static List* ConvertToList(list<string> edges, int sizeMatrix);
 /// <summary>
-/// Функция, которая считывает данные из файла и на их основании решает как хранить граф в памяти (matrix/link).
+/// Функция, которая считывает данные из файла и на их основании решает как хранить граф в памяти (matrix / link).
 /// <param name="filename">Содержит название файла, в котором хранятся данные.</param>
 /// </summary>
 	static Data ReadFile(string filename);
