@@ -7,18 +7,46 @@
 
 using namespace std;
 
+/// <summary>
+/// Класс, который представляет основной функционал.
+/// </summary>
 static class  Algorithms
 {
+/// <summary>
+/// Функция, которая парсит входные данные и преобразует их в числовую матрицу.
+/// <param name="edges">Строки, содержащие данные о ребрах и вершинах графа.</param>
+/// <param name="sizeMatrix">Количество вершин графа.</param>
+/// </summary>
 	static int** ConvertToMatrix(list<string> edges, int sizeMatrix);
+/// <summary>
+/// Функция, которая парсит входные данные и преобразует их в односвязанный список.
+/// <param name="edges">Строки, содержащие данные о ребрах и вершинах графа.</param>
+/// <param name="sizeMatrix">Количество вершин графа.</param>
+/// </summary>
 	static List* ConvertToList(list<string> edges, int sizeMatrix);
+/// <summary>
+/// Функция, которая считывает данные из файла и на их основании решает как хранить граф в памяти (matrix/link).
+/// <param name="filename">Содержит название файла, в котором хранятся данные.</param>
+/// </summary>
 	static Data ReadFile(string filename);
 
+/// <summary>
+/// Функция, которая находит кратчайший путь от начальной вершины до конечной.
+/// <param name="matrix">Содержит данные о вершинах.</param>
+/// <param name="sizeMatrix">Количество вершин графа.</param>
+/// <param name="start">Номер вершины, от которой будет построен путь.</param>
+/// <param name="finish">Номер вершины, до которой будет построен путь.</param>
+/// </summary>
 	template <class T>
 	static Way FindingWay(T matrix, const int sizeMatrix, int start, int finish);
 
 public:
+/// <summary>
+/// Основная функция, которая находит кратчайший путь от начальной вершины до конечной.
+/// <param name="argc">Количество элементов командной строки.</param>
+/// <param name="argv">Аргументы командной строки.</param>
+/// </summary>
 	static void FindWay(int argc, char* argv[]);
-
 };
 
 //----------------------------------------------------------------------------------------------------------//

@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/// <summary>
+/// —трукткра, котора€ хранит данные о найденном пути.
+/// </summary>
 struct Way
 {
 	int length = 0;
@@ -13,6 +16,9 @@ struct Way
 	int finish = 0;
 };
 
+/// <summary>
+/// —трукткра, котора€ хранит данные о типе хранени€ данных о графе(matrix/list), размере графа и значени€х вершин.
+/// </summary>
 struct Data
 {
 	int sizeGraph = 0;
@@ -20,6 +26,9 @@ struct Data
 	string typeConvert;
 };
 
+/// <summary>
+/// —трукткра, котора€ хранит данные о вершинах графа (индекс, вес до вершины и указатель на следующую вершину).
+/// </summary>
 struct Node
 {
 	int indexVertex;
